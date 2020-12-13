@@ -9,6 +9,7 @@ import android.view.View;
 import com.example.viewtest.activity.DialogActivity;
 import com.example.viewtest.activity.FrameOfReferenceActivity;
 import com.example.viewtest.activity.LocalVisibleRectActivity;
+import com.example.viewtest.activity.ViewActivity;
 import com.example.viewtest.activity.WindowActivity;
 
 /**
@@ -30,12 +31,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, LocalVisibleRectActivity.class));
     }
 
+    //测试Window
     public void testWindow(View view) {
         startActivity(new Intent(this, WindowActivity.class));
     }
 
+    //测试Dialog
     public void testDialog(View view) {
         startActivity(new Intent(this, DialogActivity.class));
+    }
 
+    //测试View的绘制方法调用+invalidate + requestLayout
+    public void testView(View view) {
+        startActivity(new Intent(this, ViewActivity.class));
     }
 }
