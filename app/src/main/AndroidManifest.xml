@@ -11,7 +11,6 @@
         android:theme="@style/Base.Theme.AppCompat">
         <activity
             android:name=".activity.TestMotionEventCActivity"
-            android:process="com.example.viewtest-b"
             android:label="TestMotionEventCActivity"></activity>
         <activity
             android:name=".activity.TestMotionEventBActivity"
