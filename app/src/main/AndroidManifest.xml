@@ -8,8 +8,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/DiyAppTheme">
-        <activity android:name=".activity.ViewActivity"></activity>
+        android:theme="@style/Base.Theme.AppCompat">
+        <activity
+            android:name=".activity.TestMotionEventCActivity"
+            android:process="com.example.viewtest-b"
+            android:label="TestMotionEventCActivity"></activity>
+        <activity
+            android:name=".activity.TestMotionEventBActivity"
+            android:label="TestMotionEventBActivity" />
+        <activity
+            android:name=".activity.TestMotionEventAActivity"
+            android:label="TestMotionEventAActivity" />
+        <activity android:name=".activity.TouchDelegateActivity" />
+        <activity android:name=".activity.ViewActivity" />
         <activity android:name=".activity.DialogActivity" />
         <activity android:name=".activity.WindowActivity" />
         <activity

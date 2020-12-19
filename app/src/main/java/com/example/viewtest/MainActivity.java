@@ -9,6 +9,9 @@ import android.view.View;
 import com.example.viewtest.activity.DialogActivity;
 import com.example.viewtest.activity.FrameOfReferenceActivity;
 import com.example.viewtest.activity.LocalVisibleRectActivity;
+import com.example.viewtest.activity.TestMotionEventAActivity;
+import com.example.viewtest.activity.TestMotionEventBActivity;
+import com.example.viewtest.activity.TouchDelegateActivity;
 import com.example.viewtest.activity.ViewActivity;
 import com.example.viewtest.activity.WindowActivity;
 
@@ -44,5 +47,21 @@ public class MainActivity extends AppCompatActivity {
     //测试View的绘制方法调用+invalidate + requestLayout
     public void testView(View view) {
         startActivity(new Intent(this, ViewActivity.class));
+    }
+
+    public void testTouchDelegate(View view) {
+        startActivity(new Intent(this, TouchDelegateActivity.class));
+    }
+
+    public void testMotionEventA(View view) {
+        startActivity(new Intent(this, TestMotionEventAActivity.class));
+    }
+
+    public void testMotionEventB(View view) {
+        startActivity(new Intent(this, TestMotionEventBActivity.class));
+    }
+
+    public void testMotionEventC(View view) {
+        startActivity(new Intent(this, TestMotionEventBActivity.class));
     }
 }
