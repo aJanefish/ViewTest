@@ -112,6 +112,12 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="to do SomeThing" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="testChildError"
+                android:text="子线程抛出异常，主线程崩溃" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

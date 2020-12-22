@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.viewtest.activity.ChildErrorActivity;
 import com.example.viewtest.activity.DialogActivity;
 import com.example.viewtest.activity.FrameOfReferenceActivity;
 import com.example.viewtest.activity.LocalVisibleRectActivity;
@@ -63,5 +64,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void testMotionEventC(View view) {
         startActivity(new Intent(this, TestMotionEventBActivity.class));
+    }
+
+    public void testChildError(View view) {
+        startActivity(new Intent(this, ChildErrorActivity.class));
     }
 }

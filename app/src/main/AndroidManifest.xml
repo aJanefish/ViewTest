@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.AppCompat">
+        <activity android:name=".activity.ChildErrorActivity"></activity>
         <activity
             android:name=".activity.TestMotionEventCActivity"
-            android:label="TestMotionEventCActivity"></activity>
+            android:label="TestMotionEventCActivity" />
         <activity
             android:name=".activity.TestMotionEventBActivity"
             android:label="TestMotionEventBActivity" />
